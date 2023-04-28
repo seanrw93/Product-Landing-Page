@@ -1,0 +1,425 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: box-border;
+    font-size: 10px;
+    min-width: 300px;
+  }
+  
+  /** Code for header **/
+  
+  #header {
+    position: fixed;
+    color: rgba(228, 228, 247, 0.8);
+    font-family: Courier New, sans-serif;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 90px;
+    border-bottom: 3px solid rgb(85, 88, 119); 
+    background-color: rgb(58, 58, 89);
+  }
+  
+  body {
+    font-family: Georgia, sans-serif;
+    background-color: rgb(228, 228, 247);
+    color: rgb(58, 58, 89);
+  }
+  
+  .logo-title {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+    
+  
+  .logo {
+    margin-right: 10px;
+    width: 90px
+  }
+  
+  .logo-title h1 {
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+  }
+  
+  .ezl {
+    font-size: 4.5rem;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+  }
+  
+  nav li {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-left: 2px solid rgb(228, 228, 247);
+    list-style: none;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: rgba(228, 228, 247, 0.8);
+  }
+  
+  /** Code for main **/
+  
+  .quote-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px; 
+  }
+  
+  .quote {
+    text-align: center;
+    max-width: 500px;
+    margin: auto 10px;
+  }
+  
+  .quote-side {
+    color: rgba(58, 58, 89, 0.75);
+    font-size: 1.8rem;
+  }
+  
+  .quote-center {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.5em;
+  }
+  
+  .quote::before {
+    content: '"';
+    font-size: 1.5em;
+    color: rgb(230, 161, 12)
+  }
+  
+  .quote::after {
+    content: '"';
+    font-size: 1.5em;
+    color: rgb(230, 161, 12)
+  }
+  
+  .quote-3 {
+    margin-right: 10px;
+  }
+  
+  #contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 80px 15px 0 15px;
+  }
+  
+  #contact h2{
+    margin-bottom: 30px;
+    font-size: 2.0em;
+  }
+  
+  #contact #email {
+    width: 100%;
+    max-width: 350px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid rgb(58, 58, 89);
+    padding: 0 3px;
+    margin: 5px 0;
+  }
+  
+  #contact #submit {
+    width: 100%;
+    max-width: 160px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding: 5px;
+    border: none;
+    background-color: rgb(230, 161, 12);
+    color: rgb(58, 58, 89);
+    font-family: Courier New, sans-serif;
+    font-size: 1.9rem;
+    border-radius: 3px;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+
+  #contact #submit:hover {
+    cursor: pointer;
+    background-color: rgb(58, 58, 89);
+    color: rgb(230, 161, 12);
+    transform: scale(1.1)
+  }
+  
+  #our-courses {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+  
+  }
+  
+  .our-courses .icon {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: rgb(230, 161, 12);
+    margin-bottom: 10px;
+  }
+  
+  .info {
+    margin-bottom: 40px;
+    margin: 0 15px;
+  }
+  
+  .our-courses h1{
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  
+  .our-courses p {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    text-align: justify;
+  }
+  
+  iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    border-radius: 5px;
+  }
+    
+  #pricing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+    
+  }
+  
+  .course {
+    width: 220px;
+    height: 320px;
+    border: 2px solid rgb(58, 58, 89);
+    border-radius: 5px;
+    background-color: rgb(241, 241, 248);
+    margin: 15px;
+  }
+  
+  .course-header {
+    width: 100%;
+    height: 23%;
+    background-color: rgb(230, 161, 12);
+    font-family: Courier New, sans-serif;
+  }
+  
+  .course h1 {
+    font-size: 2.0rem;
+    text-align: center;
+    padding-top: 15px;
+  }
+    
+  .course li {
+    margin: 20px 5px 10px 20px;
+    font-size: 1.8rem;
+  }
+  
+  footer {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(58, 58, 89);
+    border-top: 3px solid rgb(85, 88, 119); 
+    margin-top: 60px;
+    font-family: Courier New, sans-serif;
+  }
+  
+  footer ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
+  
+  footer li {
+    font-size: 1.5rem;
+    list-style: none;
+    font-weight: bold;
+    padding-left: 15px;
+  
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: rgba(228, 228, 247, 0.8);
+  }
+  
+  /** Media queries for responsive design **/
+  
+  @media only screen and (max-width: 830px) {
+    .logo {
+      width: 70px;
+    }
+    
+    .logo-title h1 {
+    font-size: 2.0rem;
+    }
+  
+    .ezl {
+    font-size: 3rem;
+    }
+  
+    nav ul {
+      display: block;
+    }
+  
+    nav li {
+      align-items: center;
+      padding: 7px 20px;
+    }
+  
+    .quote-container {
+      display: grid;
+      justify-items: center;
+      grid-auto-rows: minmax(100px, auto);
+      grid-gap: 5px;
+      grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "sidebar content"
+    }
+  
+    .quote-2 {
+      grid-area: header;
+    }
+  
+    .quote-1 {
+      grid-area: sidebar;
+      max-width: 350px;
+    }
+  
+    .quote-3 {
+      grid-area: content;
+      max-width: 350px;
+  
+    }
+    
+    #contact h2 {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  
+    #our-courses {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    }
+    
+    .our-courses {
+      margin-bottom: 50px;
+    }
+  
+     #pricing {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+    }
+  
+     .course {
+       width: 250px;
+       height: 350px;
+  
+     }
+  
+     footer ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+     }
+  
+     footer li {
+       padding-left: 25px;
+     }
+  }
+  @media only screen and (max-width: 650px) {
+
+
+    #header {
+      height: 120px;
+     }
+  
+    #header {
+      flex-wrap: wrap;
+      
+    }
+  
+    .logo-title {
+      position: absolute;
+      top: 10px;
+  
+    }
+
+    #nav-bar {
+        position: absolute;
+        bottom: 12px;
+    }
+  
+    nav ul {
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+    
+    nav li {
+      letter-spacing: 2.2px;
+      padding: 0 8px;
+      margin-top: 8px;
+    }
+  
+    nav li:last-of-type {
+      border-right: 2px solid rgb(228, 228, 247);
+    }
+  
+    .quote-container {
+      display: flex;
+      height: 100%;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+  
+    }
+  
+    .quote {
+      padding: 10px;
+      max-width: 100%;
+    }
+  
+    .quote-3 {
+      margin-right: 0;
+    }
+  
+    iframe {
+     max-width: 350px;
+     width: 100%;
+    }
+    }
